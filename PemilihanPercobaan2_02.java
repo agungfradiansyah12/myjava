@@ -14,7 +14,9 @@ public class PemilihanPercobaan2_02 {
 
         float total = (uas * 0.4f) + (uts * 0.3f) + (kuis * 0.1f) + (tugas * 0.2f);
 
-        String message = total > 80  ? " A " :
+        String message = 
+        total > 100 ? "tidak tertera":
+        total > 80 && total <= 100 ? " A " :
         total > 73 && total <= 80 ? " B+ " :
         total > 65 && total <= 73 ? " B " :
         total > 60 && total <= 65 ? " C+ " :
